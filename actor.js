@@ -7,6 +7,15 @@ class Actor {
     this.inventory = {}
   }
 
+  addCoins(amount) {
+    this.coins += amount
+  }
+
+  removeCoins(amount) {
+    //todo: limits
+    this.coins -= amount
+  }
+
   addItem(itemName, quantity = 1) {
     if (registry.items.check(itemName)) {
       if (this.inventory[itemName]) {

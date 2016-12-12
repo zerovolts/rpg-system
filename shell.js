@@ -24,6 +24,9 @@ const commands = {
       case 'name':
         console.log(actor.name)
         break
+      case 'coins':
+        console.log(actor.coins)
+        break
       case 'inv':
         console.log('Inventory')
         console.log('---------')
@@ -36,7 +39,7 @@ const commands = {
   craft: function(actor, args) {
     const itemName = args[0]
     actor.craftItem(itemName, args[1])
-    console.log('Crafted [' + itemName + ']')
+    console.log('Crafted [' + itemName + '] x' + args[1] || 1)
   },
   help: function(actor, args) {
     console.log('help - displays this help message')
@@ -45,6 +48,9 @@ const commands = {
   },
   mine: function(actor, args) {
     actor.addItem('iron-ore')
+  },
+  sell: function(actor, args) {
+
   }
 }
 
