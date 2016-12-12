@@ -4,8 +4,9 @@ const Shell = require('./shell').Shell
 const Controller = require('./controller').Controller
 const Market = require('./market').Market
 
+
 let actors = Array(8).fill(null)
-actors = actors.map(_ => new Actor('abcdefghijklmnopqrstuvwxyz'[Math.floor(Math.random() * 26)]))
+actors = actors.map(_ => new Actor())
 let actor = actors[0]
 module.exports.actor = actor
 

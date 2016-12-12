@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/zerovolts/rpg-system/issues"
   },
-  "homepage": "https://github.com/zerovolts/rpg-system#readme"
+  "homepage": "https://github.com/zerovolts/rpg-system#readme",
+  "dependencies": {
+    "lodash": "^4.17.2"
+  }
 }

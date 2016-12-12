@@ -1,7 +1,8 @@
 const registry = require('./registry/registry')
+const generateName = require('./name-generator').generateName
 
 class Actor {
-  constructor(name = '') {
+  constructor(name = generateName()) {
     this.name = name
     this.coins = 0
     this.inventory = {}
