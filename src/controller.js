@@ -2,7 +2,7 @@
 class Controller {
   constructor(actor) {
     this.actor = actor
-    //console.log(this.actor)
+    console.log(this.actor)
   }
 
   update() {
